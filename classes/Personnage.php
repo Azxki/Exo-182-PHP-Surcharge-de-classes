@@ -1,6 +1,9 @@
 <?php
 
-// Ma classe s'apelle personnage
+// Ma classe s'appelle Personnage
+
+
+
 class Personnage {
 
     // La propriété id a été modifié pour passer de private à protected, je ne peux pas la modifier ou la lire directement en dehors de cette classe
@@ -9,6 +12,9 @@ class Personnage {
     // + protected $id;
     protected $id;
     protected $nom;
+    protected $x;
+    protected $y;
+
     protected $vie;
 
     // Constructeur de ma classe permettant de définir des valeurs par défaut lorsqu'elle est instanciée
@@ -19,9 +25,25 @@ class Personnage {
         $this->vie = 50;
     }
 
+    /**
+     * @return int
+     */
+    public function getVie(): int
+    {
+        return $this->vie;
+    }
+
+    /**
+     * @param int $vie
+     */
+    public function setVie(int $vie): void
+    {
+        $this->vie = $vie;
+    }
+
     // Méthode permettant de déplacer le personnage vers la droite
     public function walkRight() {
-        $this->x += 1;
+        $this->x+=1;
 
     }
 
