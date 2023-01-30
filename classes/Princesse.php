@@ -16,6 +16,39 @@ class Princesse extends Personnage {
     /**
      * @return int
      */
+    public function getX(): int
+    {
+        return $this->x;
+    }
+
+    /**
+     * @param int $x
+     */
+    public function setX(int $x): void
+    {
+        $this->x = $x;
+    }
+
+    /**
+     * @return int
+     */
+    public function getY(): int
+    {
+        return $this->y;
+    }
+
+    /**
+     * @param int $y
+     */
+    public function setY(int $y): void
+    {
+        $this->y = $y;
+    }
+
+
+    /**
+     * @return int
+     */
     public function getSaved(): int
     {
         return $this->saved;

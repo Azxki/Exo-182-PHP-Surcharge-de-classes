@@ -17,8 +17,9 @@ $dragon = new dragon();
 echo 'dragon = ' . $dragon->getVie() . '<br>';
 // Creation d'une instance de la classe princesse
 $princesse = new princesse();
-echo 'princesse = ' . $princesse->getSaved() . '<br>';
+echo 'princesse = x ' . $princesse->getX() . " et y " . $princesse->getY() . '<br>';
 // Creation d'une instance de la classe sorcier
 $sorcier = new sorcier();
-echo 'princesse = ' . $princesse->x() . '<br>';
+echo 'sorcier = x ' . $sorcier->getX() . " et y " . $sorcier->getY() . '<br>';
+
 
